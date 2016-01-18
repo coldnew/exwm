@@ -62,6 +62,10 @@
 
 ;;; Code:
 
+;; cl-generic is bundle with emacs 25 or above.
+(when (>= emacs-major-version 25)
+  (require 'cl-generic))
+
 (require 'server)
 (require 'exwm-core)
 (require 'exwm-workspace)
